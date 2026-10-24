@@ -133,7 +133,10 @@ Tệp mã nguồn PyTorch đại diện cho cách tiếp cận chuẩn hóa tron
 
 ### 20 AI Research Papers Thế Kỷ 21 (19 bài)
 - [`Day 02 - Autoencoder`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2002%20-%20Autoencoder): ✅ **Đã hoàn thành chuẩn mẫu 4 thành phần**
-- `Day 03` đến `Day 20`: 📚 *Đã có PDF gốc trong `resources/`, chờ cấp phép triển khai mã nguồn và tài liệu lý thuyết.*
+- [`Day 03 - Visualizing Data using t-SNE`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2003%20-%20Visualizing%20Data%20using%20t-SNE): ✅ **Đã hoàn thành chuẩn mẫu 4 thành phần**
+- [`Day 04 - ImageNet`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2004%20-%20ImageNet): ✅ **Đã hoàn thành chuẩn mẫu 4 thành phần**
+- [`Day 05 - AlexNet`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2005%20-%20AlexNet): ✅ **Đã hoàn thành chuẩn mẫu 4 thành phần**
+- `Day 06` đến `Day 20`: 📚 *Đã có PDF gốc trong `resources/`, chờ cấp phép triển khai mã nguồn và tài liệu lý thuyết.*
 
 ### 10 Research Papers Về NLP (10 bài)
 - `Day 01` đến `Day 10`: 📚 *Đã có PDF gốc trong `resources/`, chờ cấp phép triển khai mã nguồn và tài liệu lý thuyết.*

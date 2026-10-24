@@ -23,9 +23,9 @@ Mỗi thư mục bài báo độc lập bao gồm 4 phần:
 | STT | Bài Báo / Chủ Đề | Tác Giả & Xuất Bản | Thư Mục | Tiến Độ & Trạng Thái |
 |:---:|---|---|---|:---:|
 | 02 | **Autoencoder** (*Reducing the Dimensionality of Data with Neural Networks*) | G. E. Hinton, R. R. Salakhutdinov (Science 2006) | [`Day 02 - Autoencoder/`](./Day%2002%20-%20Autoencoder) | ✅ **Mẫu chuẩn hoàn thành (Đủ 4 phần)** |
-| 03 | **t-SNE** (*Visualizing Data using t-SNE*) | L. van der Maaten, G. Hinton (JMLR 2008) | [`Day 03 - Visualizing Data using t-SNE/`](./Day%2003%20-%20Visualizing%20Data%20using%20t-SNE) | 📚 Đã có PDF gốc (Chờ cấp phép triển khai) |
-| 04 | **ImageNet** (*ImageNet: A Large-Scale Hierarchical Image Database*) | J. Deng et al. (CVPR 2009) | [`Day 04 - ImageNet/`](./Day%2004%20-%20ImageNet) | 📚 Đã có PDF gốc (Chờ cấp phép triển khai) |
-| 05 | **AlexNet** (*ImageNet Classification with Deep CNNs*) | A. Krizhevsky, I. Sutskever, G. Hinton (NeurIPS 2012) | [`Day 05 - AlexNet/`](./Day%2005%20-%20AlexNet) | 📚 Đã có PDF gốc (Chờ cấp phép triển khai) |
+| 03 | **t-SNE** (*Visualizing Data using t-SNE*) | L. van der Maaten, G. Hinton (JMLR 2008) | [`Day 03 - Visualizing Data using t-SNE/`](./Day%2003%20-%20Visualizing%20Data%20using%20t-SNE) | ✅ **Đã hoàn thành (Đủ 4 phần)** |
+| 04 | **ImageNet** (*ImageNet: A Large-Scale Hierarchical Image Database*) | J. Deng et al. (CVPR 2009) | [`Day 04 - ImageNet/`](./Day%2004%20-%20ImageNet) | ✅ **Đã hoàn thành (Đủ 4 phần)** |
+| 05 | **AlexNet** (*ImageNet Classification with Deep CNNs*) | A. Krizhevsky, I. Sutskever, G. Hinton (NeurIPS 2012) | [`Day 05 - AlexNet/`](./Day%2005%20-%20AlexNet) | ✅ **Đã hoàn thành (Đủ 4 phần)** |
 | 06 | **Word2Vec** (*Distributed Representations of Words and Phrases*) | T. Mikolov et al. (NeurIPS 2013) | [`Day 06 - Word2Vec/`](./Day%2006%20-%20Word2Vec) | 📚 Đã có PDF gốc (Chờ cấp phép triển khai) |
 | 07 | **VAE** (*Auto-Encoding Variational Bayes*) | D. P. Kingma, M. Welling (ICLR 2014) | [`Day 07 - VAE - Auto-Encoding Variational Bayes/`](./Day%2007%20-%20VAE%20-%20Auto-Encoding%20Variational%20Bayes) | 📚 Đã có PDF gốc (Chờ cấp phép triển khai) |
 | 08 | **GAN** (*Generative Adversarial Nets*) | I. Goodfellow et al. (NeurIPS 2014) | [`Day 08 - GAN/`](./Day%2008%20-%20GAN) | 📚 Đã có PDF gốc (Chờ cấp phép triển khai) |
