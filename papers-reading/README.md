@@ -22,8 +22,7 @@ Mọi bài báo trong hệ thống đều được định hướng xây dựng 
 Kho lưu trữ được phân chia thành 3 chuyên đề độc lập với tổng cộng 39 công trình nghiên cứu:
 
 | Chuyên Đề | Trọng Tâm Nghiên Cứu | Quy Mô | Đường Dẫn Chi Tiết |
-|---|---|:---:|---|
-| **20 AI Research Papers Quan Trọng Nhất Thế Kỷ 21** | Các cột mốc định hình Học sâu: Autoencoder, CNN, GAN, Transformer, BERT, GPT, ViT,... | 19 bài báo | [`20 AI Research Paper quan trọng nhất của TK 21/`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021) |
+| **20 AI Research Papers Quan Trọng Nhất Thế Kỷ 21** | Các cột mốc định hình Học sâu: Random Forest, Autoencoder, CNN, GAN, Transformer, BERT, GPT, ViT,... | 20 bài báo | [`20 AI Research Paper quan trọng nhất của TK 21/`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021) |
 | **10 Research Papers Quan Trọng Nhất Về NLP** | Các đột phá xử lý ngôn ngữ tự nhiên: T5, Scaling Laws, LoRA, CoT, Instruction Tuning, DeepSeek-R1,... | 10 bài báo | [`10 research paper quan trọng nhất về NLP/`](./10%20research%20paper%20quan%20trọng%20nhất%20về%20NLP) |
 | **10 Research Papers Quan Trọng Nhất Về RAG** | Các kiến trúc Truy xuất Tăng cường Tạo sinh & Agentic RAG: Self-RAG, Corrective RAG, GraphRAG, ReAct,... | 10 bài báo | [`10 research paper quan trọng nhất về RAG/`](./10%20research%20paper%20quan%20trọng%20nhất%20về%20RAG) |
 
@@ -35,10 +34,12 @@ Mỗi bài báo khi được triển khai hoàn thiện phải tuân thủ nghi�
 
 ```text
 Day XX - [Tên Bài Báo]/
-├── README.md               # Báo cáo lý thuyết chuyên sâu (10 mục chuẩn theo Day 02)
-├── [tên_mô_hình]_scratch.py# Cài đặt thuật toán cốt lõi from-scratch thuần NumPy/Python
-├── [tên_mô_hình]_pytorch.py# Triển khai tối ưu hóa bằng PyTorch (kèm dataset fallback & biểu đồ)
-└── resources/              # Thư mục lưu trữ bài báo gốc định dạng PDF
+├── README.md                  # Báo cáo lý thuyết chuyên sâu (10 mục chuẩn theo Day 02)
+├── [tên_mô_hình]_scratch.py   # Cài đặt thuật toán cốt lõi from-scratch thuần NumPy/Python
+├── [tên_mô_hình]_scratch.ipynb# Notebook thực hành tương tác từng ô (cell-by-cell)
+├── [tên_mô_hình]_pytorch.py   # Triển khai tối ưu hóa bằng PyTorch (kèm dataset fallback & biểu đồ)
+├── [tên_mô_hình]_pytorch.ipynb# Notebook thực hành PyTorch kèm trực quan hóa biểu đồ inline
+└── resources/                 # Thư mục lưu trữ bài báo gốc định dạng PDF
     └── Day XX [Tên].pdf
 ```
 
@@ -131,8 +132,9 @@ Tệp mã nguồn PyTorch đại diện cho cách tiếp cận chuẩn hóa tron
 
 ## 7. Bảng Tiến Độ & Trạng Thái Tổng Thể
 
-### 20 AI Research Papers Thế Kỷ 21 (19 bài)
-- [`Day 02 - Autoencoder`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2002%20-%20Autoencoder): ✅ **Đã hoàn thành chuẩn mẫu 4 thành phần**
+### 20 AI Research Papers Thế Kỷ 21 (20 bài)
+- [`Day 01 - Random Forest`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2001%20-%20Random%20Forest): ✅ **Đã hoàn thành chuẩn mẫu 4 thành phần**
+- [`Day 02 - Autoencoder`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2002%20-%20Autoencoder): ✅ **Mẫu chuẩn hoàn thành (Đủ 4 phần)**
 - [`Day 03 - Visualizing Data using t-SNE`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2003%20-%20Visualizing%20Data%20using%20t-SNE): ✅ **Đã hoàn thành chuẩn mẫu 4 thành phần**
 - [`Day 04 - ImageNet`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2004%20-%20ImageNet): ✅ **Đã hoàn thành chuẩn mẫu 4 thành phần**
 - [`Day 05 - AlexNet`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2005%20-%20AlexNet): ✅ **Đã hoàn thành chuẩn mẫu 4 thành phần**

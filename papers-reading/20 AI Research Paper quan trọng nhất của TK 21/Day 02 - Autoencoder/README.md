@@ -267,9 +267,11 @@ Thư mục này cung cấp 2 tệp cài đặt mã nguồn hoàn chỉnh:
 
 ```text
 Day 02 - Autoencoder/
-├── README.md               # Tài liệu lý thuyết chi tiết này
-├── autoencoder_scratch.py  # Cài đặt thuần Python & NumPy (RBM, CD-1, Backprop from scratch)
-├── autoencoder_pytorch.py  # Cài đặt hiện đại bằng PyTorch (Deep AE, 2D Latent viz, So sánh PCA)
+├── README.md                  # Tài liệu lý thuyết chi tiết này
+├── autoencoder_scratch.py     # Cài đặt thuần Python & NumPy (RBM, CD-1, Backprop from scratch)
+├── autoencoder_scratch.ipynb  # Notebook thực hành tương tác (From Scratch)
+├── autoencoder_pytorch.py     # Cài đặt hiện đại bằng PyTorch (Deep AE, 2D Latent viz, So sánh PCA)
+├── autoencoder_pytorch.ipynb  # Notebook thực hành tương tác & trực quan hóa PyTorch
 └── resources/
     └── Day 2 Autoencoder.pdf
 ```

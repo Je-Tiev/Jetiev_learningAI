@@ -12,8 +12,8 @@ Tập hợp các bài báo khoa học kinh điển đã khai sinh và thúc đ�
 
 Mỗi thư mục bài báo độc lập bao gồm 4 phần:
 1. 📄 **`README.md`**: Báo cáo phân tích chuyên sâu 10 mục bằng Tiếng Việt (Ý nghĩa lịch sử, bối cảnh toán học, kiến trúc, đột phá, quy trình huấn luyện, bảng đối chuẩn thực nghiệm, di sản/tiến hóa, hướng dẫn code, câu hỏi ôn tập).
-2. ⚙️ **`[model]_scratch.py`**: Tự cài đặt thuật toán từ đầu bằng Python thuần + NumPy (tự tính đạo hàm manual backprop, kiểm thử toán học).
-3. 🚀 **`[model]_pytorch.py`**: Triển khai tối ưu hóa bằng PyTorch (`torch.nn.Module`, fallback dataset an toàn khi offline, trực quan hóa biểu đồ ra thư mục `outputs/`).
+2. ⚙️ **`[model]_scratch.py` & `[model]_scratch.ipynb`**: Tự cài đặt thuật toán từ đầu bằng Python thuần + NumPy (chạy dạng script lẫn notebook tương tác từng cell).
+3. 🚀 **`[model]_pytorch.py` & `[model]_pytorch.ipynb`**: Triển khai tối ưu hóa bằng PyTorch (`torch.nn.Module`, fallback dataset an toàn khi offline, trực quan hóa biểu đồ inline & lưu `outputs/`).
 4. 📚 **`resources/`**: Chứa tệp bài báo PDF gốc.
 
 ---
@@ -21,7 +21,7 @@ Mỗi thư mục bài báo độc lập bao gồm 4 phần:
 ## Danh Sách Các Bài Báo & Tiến Độ Thực Hiện
 
 | STT | Bài Báo / Chủ Đề | Tác Giả & Xuất Bản | Thư Mục | Tiến Độ & Trạng Thái |
-|:---:|---|---|---|:---:|
+| 01 | **Random Forest** (*Random Forests*) | L. Breiman (Machine Learning 2001) | [`Day 01 - Random Forest/`](./Day%2001%20-%20Random%20Forest) | ✅ **Đã hoàn thành (Đủ 4 phần)** |
 | 02 | **Autoencoder** (*Reducing the Dimensionality of Data with Neural Networks*) | G. E. Hinton, R. R. Salakhutdinov (Science 2006) | [`Day 02 - Autoencoder/`](./Day%2002%20-%20Autoencoder) | ✅ **Mẫu chuẩn hoàn thành (Đủ 4 phần)** |
 | 03 | **t-SNE** (*Visualizing Data using t-SNE*) | L. van der Maaten, G. Hinton (JMLR 2008) | [`Day 03 - Visualizing Data using t-SNE/`](./Day%2003%20-%20Visualizing%20Data%20using%20t-SNE) | ✅ **Đã hoàn thành (Đủ 4 phần)** |
 | 04 | **ImageNet** (*ImageNet: A Large-Scale Hierarchical Image Database*) | J. Deng et al. (CVPR 2009) | [`Day 04 - ImageNet/`](./Day%2004%20-%20ImageNet) | ✅ **Đã hoàn thành (Đủ 4 phần)** |

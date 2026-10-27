@@ -256,9 +256,11 @@ Thư mục cung cấp 2 tệp cài đặt mã nguồn hoàn chỉnh:
 
 ```text
 Day 05 - AlexNet/
-├── README.md               # Báo cáo lý thuyết chuyên sâu 10 mục chuẩn này
-├── alexnet_scratch.py      # Cài đặt thuần Python & NumPy (Conv2D im2col, Overlapping MaxPool, ReLU, LRN, Dropout)
-├── alexnet_pytorch.py      # Triển khai AlexNet chuẩn PyTorch, trực quan hóa 96 bộ lọc Conv1 & xuất biểu đồ
+├── README.md                  # Báo cáo lý thuyết chuyên sâu 10 mục chuẩn này
+├── alexnet_scratch.py         # Cài đặt thuần Python & NumPy (Conv2D im2col, Overlapping MaxPool, ReLU, LRN, Dropout)
+├── alexnet_scratch.ipynb      # Notebook thực hành tương tác trực quan (From Scratch)
+├── alexnet_pytorch.py         # Triển khai AlexNet chuẩn PyTorch, trực quan hóa 96 bộ lọc Conv1 & xuất biểu đồ
+├── alexnet_pytorch.ipynb      # Notebook thực hành tương tác & trực quan hóa PyTorch
 └── resources/
     └── Day 5 AlexNet.pdf
 ```

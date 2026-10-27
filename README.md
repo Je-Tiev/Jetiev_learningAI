@@ -24,7 +24,7 @@ Kho lưu trữ gồm 5 phần lý thuyết cốt lõi, chuyên đề nghiên c�
 | [`part3-machine-learning/`](./part3-machine-learning) | Nguyên lý học máy cơ bản, các giải thuật cổ điển (SVM, Decision Tree, K-Means), mạng nơ-ron truyền thẳng. |
 | [`part4-deep-learning-foundation-models/`](./part4-deep-learning-foundation-models) | Thị giác máy tính (CNN, ResNet), Xử lý ngôn ngữ tự nhiên, kiến trúc Transformers, Self-supervised learning, AI tạo sinh. |
 | [`part5-trustworthy-responsible-ai/`](./part5-trustworthy-responsible-ai) | Tính minh bạch & khả năng giải thích (XAI), tính cứng cáp & quyền riêng tư (DP-SGD), công bằng thuật toán, đạo đức AI & alignment (RLHF/DPO). |
-| [`papers-reading/`](./papers-reading) | **Chuyên đề nghiên cứu 39 bài báo khoa học then chốt** (20 bài TK21, 10 bài NLP, 10 bài RAG) theo quy chuẩn 4 thành phần. |
+| [`papers-reading/`](./papers-reading) | **Chuyên đề nghiên cứu 40 bài báo khoa học then chốt** (20 bài TK21, 10 bài NLP, 10 bài RAG) theo quy chuẩn 4 thành phần. |
 | [`resources/`](./resources) | **Tủ sách học thuật & Bảng tra cứu**: 8 đầu sách kinh điển tại [`Book/`](./resources/Book) và 16 tài liệu tóm tắt tại [`Cheatsheet/`](./resources/Cheatsheet). |
 | [`projects/`](./projects) | Các bài toán ứng dụng toàn diện kết hợp kiến thức liên phần. |
 

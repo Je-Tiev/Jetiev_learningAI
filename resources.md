@@ -78,9 +78,9 @@ Bộ sưu tập 16 bảng tra cứu tóm tắt công thức, cú pháp và kiế
 
 ## 4. Chuyên Đề Đọc & Triển Khai Bài Báo Nghiên Cứu (AI Papers Reading)
 
-Thư mục [`papers-reading/`](./papers-reading) được tổ chức thành 3 chuyên đề độc lập gồm tổng cộng 39 công trình nghiên cứu bản lề:
+Thư mục [`papers-reading/`](./papers-reading) được tổ chức thành 3 chuyên đề độc lập gồm tổng cộng 40 công trình nghiên cứu bản lề:
 
-1. **[20 AI Research Papers Quan Trọng Nhất Thế Kỷ 21](./papers-reading/20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021)**: Các cột mốc khai sinh kỷ nguyên Deep Learning (Autoencoder, AlexNet, Word2Vec, VAE, GAN, ResNet, Transformer, BERT, GPT-3, ViT,...).
+1. **[20 AI Research Papers Quan Trọng Nhất Thế Kỷ 21](./papers-reading/20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021)**: Các cột mốc khai sinh kỷ nguyên Machine Learning & Deep Learning (Random Forest, Autoencoder, AlexNet, Word2Vec, VAE, GAN, ResNet, Transformer, BERT, GPT-3, ViT,...).
 2. **[10 Research Papers Quan Trọng Nhất Về NLP](./papers-reading/10%20research%20paper%20quan%20trọng%20nhất%20về%20NLP)**: Các đột phá mô hình ngôn ngữ lớn (T5, Scaling Laws, LoRA, Chain-of-Thought, Toolformer, DeepSeek-R1,...).
 3. **[10 Research Papers Quan Trọng Nhất Về RAG](./papers-reading/10%20research%20paper%20quan%20trọng%20nhất%20về%20RAG)**: Các kiến trúc nâng cao độ chính xác truy xuất và tri thức bên ngoài (RAG Foundations, Self-RAG, Corrective RAG, GraphRAG, Agentic RAG, ReAct,...).
 

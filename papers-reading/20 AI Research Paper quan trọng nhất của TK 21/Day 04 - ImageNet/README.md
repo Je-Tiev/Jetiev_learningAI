@@ -232,9 +232,11 @@ Thư mục này cung cấp 2 tệp cài đặt mã nguồn hoàn chỉnh mô ph�
 
 ```text
 Day 04 - ImageNet/
-├── README.md               # Tài liệu phân tích lý thuyết chi tiết này
-├── imagenet_scratch.py     # Cài đặt cấu trúc Cây Phả Hệ WordNet, khoảng cách Tree-Hop, giải thuật gán nhãn AMT
-├── imagenet_pytorch.py     # Triển khai Hierarchical Tree Loss, đánh giá Top-1/Top-5 & Confusion Matrix bằng PyTorch
+├── README.md                  # Tài liệu phân tích lý thuyết chi tiết này
+├── imagenet_scratch.py        # Cài đặt cấu trúc Cây Phả Hệ WordNet, khoảng cách Tree-Hop, giải thuật gán nhãn AMT
+├── imagenet_scratch.ipynb     # Notebook thực hành tương tác trực quan (From Scratch)
+├── imagenet_pytorch.py        # Triển khai Hierarchical Tree Loss, đánh giá Top-1/Top-5 & Confusion Matrix bằng PyTorch
+├── imagenet_pytorch.ipynb     # Notebook thực hành tương tác & trực quan hóa PyTorch
 └── resources/
     └── Day 4 ImageNet.pdf
 ```

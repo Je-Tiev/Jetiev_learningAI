@@ -254,9 +254,11 @@ Thư mục này cung cấp 2 tệp mã nguồn độc lập, tự vận hành:
 
 ```text
 Day 03 - Visualizing Data using t-SNE/
-├── README.md               # Tài liệu phân tích lý thuyết chi tiết này
-├── tsne_scratch.py          # Cài đặt thuần Python & NumPy (Binary Search Perplexity, Gradient, Early Exaggeration)
-├── tsne_pytorch.py          # Triển khai tăng tốc bằng PyTorch (Module autograd, so sánh PCA, xuất biểu đồ)
+├── README.md                  # Tài liệu phân tích lý thuyết chi tiết này
+├── tsne_scratch.py            # Cài đặt thuần Python & NumPy (Binary Search Perplexity, Gradient, Early Exaggeration)
+├── tsne_scratch.ipynb         # Notebook thực hành tương tác trực quan (From Scratch)
+├── tsne_pytorch.py            # Triển khai tăng tốc bằng PyTorch (Module autograd, so sánh PCA, xuất biểu đồ)
+├── tsne_pytorch.ipynb         # Notebook thực hành tương tác & trực quan hóa PyTorch
 └── resources/
     └── Day 3 Visualizing Data using t-SNE.pdf
 ```
