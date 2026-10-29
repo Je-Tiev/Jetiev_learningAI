@@ -197,7 +197,7 @@ def run_academic_value_comparison():
 ### 20 AI Research Papers Thế Kỷ 21 (20 bài)
 - [`Day 01 - Random Forest`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2001%20-%20Random%20Forest): ✅ **Hoàn thành xuất sắc: Đủ 4 file code + Bình giải chi tiết cho người mới + Khối đối chuẩn giá trị học thuật**
 - [`Day 02 - Autoencoder`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2002%20-%20Autoencoder): ✅ **Hoàn thành xuất sắc: Đủ 4 file code + Bình giải chi tiết cho người mới + Khối đối chuẩn giá trị học thuật**
-- [`Day 03 - Visualizing Data using t-SNE`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2003%20-%20Visualizing%20Data%20using%20t-SNE): ✅ **Đã hoàn thành chuẩn mẫu 4 thành phần**
+- [`Day 03 - Visualizing Data using t-SNE`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2003%20-%20Visualizing%20Data%20using%20t-SNE): ✅ **Hoàn thành xuất sắc: Đủ 4 file code + Bình giải chi tiết cho người mới + Khối đối chuẩn giá trị học thuật**
 - [`Day 04 - ImageNet`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2004%20-%20ImageNet): ✅ **Đã hoàn thành chuẩn mẫu 4 thành phần**
 - [`Day 05 - AlexNet`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2005%20-%20AlexNet): ✅ **Đã hoàn thành chuẩn mẫu 4 thành phần**
 - `Day 06` đến `Day 20`: 📚 *Đã có PDF gốc trong `resources/`, sẵn sàng triển khai theo khung chuẩn hóa mục 6.*
