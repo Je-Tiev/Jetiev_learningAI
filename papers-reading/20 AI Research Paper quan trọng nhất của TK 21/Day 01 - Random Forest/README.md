@@ -196,33 +196,51 @@ Trong bài báo năm 2001, Leo Breiman đã so sánh toàn diện Random Forest 
 
 ## 9. Cấu Trúc Mã Nguồn & Hướng Dẫn Thực Hành
 
-Thư mục cung cấp 2 tệp mã nguồn hoàn chỉnh:
+Thư mục cung cấp đầy đủ 4 tệp mã nguồn và sổ tay thực hành chuẩn mực:
 
 ```text
 Day 01 - Random Forest/
 ├── README.md                  # Báo cáo lý thuyết chuyên sâu 10 mục chuẩn này
-├── random_forest_scratch.py   # Cài đặt CART Tree, Random Forest, OOB Error & MDI bằng Python & NumPy
-├── random_forest_scratch.ipynb# Notebook thực hành tương tác trực quan (From Scratch)
-├── random_forest_pytorch.py   # Triển khai Rừng Nơ-ron Vi Phân (Neural Decision Forest) bằng PyTorch
-├── random_forest_pytorch.ipynb# Notebook thực hành tương tác & trực quan hóa PyTorch
+├── random_forest_scratch.py   # Cài đặt CART Tree, Bagging, Random Forest & Khối đối chuẩn học thuật từ con số 0 (NumPy)
+├── random_forest_scratch.ipynb# Notebook thực hành tương tác từng ô kèm bình giải chi tiết cho người mới bắt đầu
+├── random_forest_pytorch.py   # Rừng Nơ-ron Vi Phân (Neural Forest) PyTorch & Đối chuẩn 4 mô hình lịch sử
+├── random_forest_pytorch.ipynb# Notebook thực hành PyTorch kèm trực quan hóa biểu đồ inline 4 bảng con
+├── outputs/                   # Thư mục lưu trữ biểu đồ đối chuẩn tự động
+│   └── random_forest_academic_comparison.png
 └── resources/
-    └── Day 1 Random Forest.pdf # Tài liệu bài báo gốc của Leo Breiman
+    └── Day 1 Random Forest.pdf# Tài liệu bài báo gốc của Leo Breiman
 ```
 
-### 9.1. Tệp `random_forest_scratch.py` (Cài đặt từ con số 0)
-- **Công nghệ**: Thuần Python chuẩn + NumPy.
-- **Tính năng nổi bật**:
-  - `DecisionTreeScratch`: Tự viết thuật toán tính độ vẩn đục Gini, tìm ngưỡng cắt tối ưu trên tập con ngẫu nhiên `max_features = sqrt(M)`.
-  - `RandomForestScratch`: Lấy mẫu Bootstrap, huấn luyện song song $B$ cây, thực hiện cơ chế bỏ phiếu đa số.
-  - Tự động tính toán **Ước lượng sai số ngoại mẫu Out-of-Bag (OOB Error)**.
-  - Tự động tính toán và xuất bảng **Tầm quan trọng đặc trưng (Mean Decrease Impurity - MDI)** ra màn hình terminal.
+### 9.1. Tệp `random_forest_scratch.py` & `random_forest_scratch.ipynb` (From Scratch thuần NumPy)
+- **Công nghệ**: Thuần Python chuẩn + thư viện số học NumPy.
+- **Tính năng nổi bật dành cho người mới bắt đầu**:
+  - `DecisionTreeNode`: Định nghĩa cấu trúc nút nhánh (rẽ điều kiện $x_j \le \text{threshold}$) và nút lá (chứa nhãn dự đoán).
+  - `DecisionTreeClassifierScratch`: Tự viết thuật toán tính Độ vẩn đục Gini ($1 - \sum p_i^2$), tìm kiếm tham lam (Greedy Search) điểm cắt tối ưu, và ngẫu nhiên hóa tập con đặc trưng (Random Subspace $m = \lfloor\sqrt{M}\rfloor$).
+  - `RandomForestClassifierScratch`: Lấy mẫu Bootstrap có lặp lại, huấn luyện quần thể $B$ cây không cắt tỉa, bỏ phiếu đa số (Majority Voting).
+  - **Đo lường hệ số tương quan giữa các cây ($\bar{\rho}$)**: Hàm `compute_tree_correlation` đo lường định lượng mức độ đồng thuận giữa các cây để chứng minh trực tiếp lý thuyết giảm phương sai của Breiman: $\text{Var} = \rho\sigma^2 + \frac{1-\rho}{B}\sigma^2$.
+  - **Khối đối chuẩn giá trị học thuật (`run_academic_value_comparison`)**: So sánh thực nghiệm trực tiếp giữa 3 thế hệ mô hình trên cùng một tập dữ liệu:
+    1. *Single CART (1984)*: Cây đơn lẻ bị Overfitting nặng (Train 100%, Test thấp, Overfitting Gap lớn).
+    2. *Bagging (1996)*: Quần thể cây với $m = M$ (các cây tương quan cao $\rho \approx 0.85$ do đặc trưng trội).
+    3. *Random Forest (2001)*: Giảm tương quan xuống $\rho \approx 0.65$, giảm Overfitting Gap và tăng Test Accuracy.
+    4. Kiểm chứng sai số Out-of-Bag (OOB) tiệm cận với sai số kiểm thử thực tế.
+  - Tự động xuất bảng xếp hạng Tầm quan trọng đặc trưng (Mean Decrease Impurity - MDI).
 
-### 9.2. Tệp `random_forest_pytorch.py` (Triển khai bằng PyTorch)
-- **Công nghệ**: PyTorch, torchvision, matplotlib, scikit-learn.
+### 9.2. Tệp `random_forest_pytorch.py` & `random_forest_pytorch.ipynb` (Triển khai bằng PyTorch)
+- **Công nghệ**: PyTorch Autograd, torch.nn, torchvision, matplotlib, scikit-learn.
 - **Tính năng nổi bật**:
-  - `NeuralRandomForest`: Triển khai mô hình rừng nơ-ron có thể vi phân (Differentiable Neural Forest) với các cổng rẽ nhánh mềm $\sigma(w \cdot x - b)$, cho phép tối ưu hóa trọng số bằng Gradient Descent và GPU.
-  - So sánh trực tiếp hiệu năng với mô hình Random Forest cổ điển.
-  - Tự động xuất biểu đồ đường biên phân loại (Decision Boundary) và tầm quan trọng đặc trưng vào thư mục `outputs/random_forest_evaluation.png`.
+  - `NeuralDecisionTree`: Cây quyết định khả vi (Differentiable Decision Tree) sử dụng cổng phân nhánh mềm Sigmoid: $p(\text{trái}) = \sigma((w^T x - b) / \tau)$. Khi nhiệt độ $\tau$ điều chỉnh phù hợp, cây có thể tính gradient trơn tru qua Backpropagation trên GPU.
+  - `NeuralRandomForest`: Quần thể rừng nơ-ron kết hợp nhiều cây vi phân độc lập, lấy trung bình xác suất đầu ra.
+  - **Bộ nạp dữ liệu Fallback an toàn**: Tự động nạp bộ dữ liệu Breast Cancer hoặc tự sinh dữ liệu nhân tạo nếu chạy offline, kèm 5% nhiễu nhãn để kiểm chứng tính bền bỉ (Noise Robustness).
+  - **Đối chuẩn giá trị học thuật xuyên suốt 4 thế hệ**:
+    1. *Logistic Regression*: Mô hình phân loại tuyến tính (không bắt được tương tác phi tuyến).
+    2. *Single Decision Tree (CART 1984)*: Bắt phi tuyến tốt nhưng bị High Variance.
+    3. *Classical Random Forest (Breiman 2001)*: Kháng nhiễu tốt nhất, Test Accuracy cao nhất.
+    4. *Differentiable Neural Forest*: Kết nối tư duy rẽ nhánh của cây với sức mạnh tối ưu hóa end-to-end của GPU.
+  - **Tự động xuất đồ thị 4 bảng con chuyên sâu** vào `outputs/random_forest_academic_comparison.png`:
+    1. *MDI Feature Importance*: Phân biệt rõ rệt đặc trưng tín hiệu và đặc trưng nhiễu.
+    2. *Test Accuracy Benchmark*: So sánh năng lực tổng quát hóa của 4 mô hình.
+    3. *Overfitting Gap Analysis*: Đối chiếu Train Acc vs Test Acc để làm rõ hiện tượng quá khớp.
+    4. *Loss Convergence Curve*: Quá trình hội tụ của Neural Decision Forest qua các Epochs.
 
 ---
 
