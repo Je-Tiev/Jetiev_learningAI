@@ -200,7 +200,8 @@ def run_academic_value_comparison():
 - [`Day 03 - Visualizing Data using t-SNE`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2003%20-%20Visualizing%20Data%20using%20t-SNE): ✅ **Hoàn thành xuất sắc: Đủ 4 file code + Bình giải chi tiết cho người mới + Khối đối chuẩn giá trị học thuật**
 - [`Day 04 - ImageNet`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2004%20-%20ImageNet): ✅ **Hoàn thành xuất sắc: Đủ 4 file code + Bình giải chi tiết cho người mới + Khối đối chuẩn giá trị học thuật**
 - [`Day 05 - AlexNet`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2005%20-%20AlexNet): ✅ **Hoàn thành xuất sắc: Đủ 4 file code + Bình giải chi tiết cho người mới + Khối đối chuẩn giá trị học thuật**
-- `Day 06` đến `Day 20`: 📚 *Đã có PDF gốc trong `resources/`, sẵn sàng triển khai theo khung chuẩn hóa mục 6.*
+- [`Day 06 - Word2Vec`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2006%20-%20Word2Vec): ✅ **Hoàn thành xuất sắc: Đủ 4 file code + Bình giải chi tiết cho người mới + Khối đối chuẩn giá trị học thuật**
+- `Day 07` đến `Day 20`: 📚 *Đã có PDF gốc trong `resources/`, sẵn sàng triển khai theo khung chuẩn hóa mục 6.*
 
 ### 10 Research Papers Về NLP (10 bài)
 - `Day 01` đến `Day 10`: 📚 *Đã có PDF gốc trong `resources/`, sẵn sàng triển khai theo khung chuẩn hóa mục 6.*
