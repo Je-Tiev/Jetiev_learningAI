@@ -263,34 +263,51 @@ Khoảng năm 2010–2015, cộng đồng AI đã phát hiện ra các kỹ thu�
 
 ## 9. Cấu Trúc Mã Nguồn & Hướng Dẫn Thực Hành
 
-Thư mục này cung cấp 2 tệp cài đặt mã nguồn hoàn chỉnh:
+Thư mục cung cấp đầy đủ 4 tệp mã nguồn và sổ tay thực hành chuẩn mực:
 
 ```text
 Day 02 - Autoencoder/
-├── README.md                  # Tài liệu lý thuyết chi tiết này
-├── autoencoder_scratch.py     # Cài đặt thuần Python & NumPy (RBM, CD-1, Backprop from scratch)
-├── autoencoder_scratch.ipynb  # Notebook thực hành tương tác (From Scratch)
-├── autoencoder_pytorch.py     # Cài đặt hiện đại bằng PyTorch (Deep AE, 2D Latent viz, So sánh PCA)
-├── autoencoder_pytorch.ipynb  # Notebook thực hành tương tác & trực quan hóa PyTorch
+├── README.md                  # Báo cáo lý thuyết chuyên sâu 10 mục chuẩn này
+├── autoencoder_scratch.py     # Cài đặt RBM, CD-1, Deep AE & Khối đối chuẩn học thuật từ con số 0 (NumPy)
+├── autoencoder_scratch.ipynb  # Notebook thực hành tương tác từng ô kèm bình giải chi tiết cho người mới bắt đầu
+├── autoencoder_pytorch.py     # Deep AE, Shallow AE, Conv AE bằng PyTorch & Đối chuẩn 4 mô hình lịch sử
+├── autoencoder_pytorch.ipynb  # Notebook thực hành PyTorch kèm trực quan hóa biểu đồ inline 4 bảng con
+├── outputs/                   # Thư mục lưu trữ biểu đồ đối chuẩn tự động
+│   └── autoencoder_academic_comparison.png
 └── resources/
-    └── Day 2 Autoencoder.pdf
+    └── Day 2 Autoencoder.pdf  # Tài liệu bài báo gốc của Hinton & Salakhutdinov
 ```
 
-### 9.1. Tệp `autoencoder_scratch.py` (Cài đặt từ con số 0)
-- **Công nghệ**: Thuần Python + NumPy.
-- **Tính năng nổi bật**:
-  - Tự định nghĩa các lớp toán học: `DenseLayer`, `Sigmoid`, `ReLU`, `MSELoss`, `BCELoss`.
-  - Cài đặt đầy đủ lớp `RBM` với giải thuật **Contrastive Divergence (CD-1)** theo đúng công thức (2) trong bài báo Hinton 2006.
-  - Cài đặt quy trình **Pre-training $\to$ Unrolling $\to$ Fine-tuning bằng Backpropagation thuần**.
-  - Tự động sinh dữ liệu đa tạp Synthetic Curves để kiểm thử và in kết quả trực quan ra terminal.
+### 9.1. Tệp `autoencoder_scratch.py` & `autoencoder_scratch.ipynb` (From Scratch thuần NumPy)
+- **Công nghệ**: Thuần Python chuẩn + thư viện số học NumPy.
+- **Tính năng nổi bật dành cho người mới bắt đầu**:
+  - Tự định nghĩa các lớp toán học với giải tích ma trận minh bạch: `DenseLayer`, `Sigmoid`, `ReLU`, `MSELoss`, `BCELoss`.
+  - Cài đặt đầy đủ lớp `RBM` với giải thuật **Contrastive Divergence (CD-1)** theo đúng công thức trong bài báo Hinton 2006 (Pha dương dữ liệu thật, Pha âm ảo giác Gibbs sampling 1 bước).
+  - Cài đặt quy trình 3 bước chuẩn: **Pre-training $\to$ Unrolling $\to$ Fine-tuning bằng Backpropagation thuần**.
+  - **Khối đối chuẩn giá trị học thuật (`run_academic_value_comparison`)**: So sánh trực tiếp 4 cột mốc trên cùng đa tạp phi tuyến:
+    1. *Linear PCA (1901)*: Giảm chiều tuyến tính phẳng (SVD/Eigenvalue), thất bại trên đa tạp cong.
+    2. *Shallow Autoencoder (1986)*: Mạng nông 1 tầng ẩn, bị giới hạn xấp xỉ không gian con PCA.
+    3. *Vanilla Deep Autoencoder (Trước 2006)*: Mạng sâu nhiều tầng Sigmoid khởi tạo ngẫu nhiên, không pre-train (bị kẹt cực tiểu địa phương tồi do vanishing gradient).
+    4. *Hinton Deep Autoencoder (2006)*: Pre-training từng tầng bằng RBM giúp mạng hội tụ tối ưu, giảm sâu sai số tái tạo (Test MSE) tới $\approx 70-80\%$ so với PCA.
+  - Tự động xuất hình ảnh tái tạo mẫu đối chiếu bằng ký tự ASCII trực quan ra terminal.
 
-### 9.2. Tệp `autoencoder_pytorch.py` (Cài đặt bằng PyTorch)
-- **Công nghệ**: PyTorch, torchvision, matplotlib, scikit-learn.
+### 9.2. Tệp `autoencoder_pytorch.py` & `autoencoder_pytorch.ipynb` (Triển khai bằng PyTorch)
+- **Công nghệ**: PyTorch Autograd, torch.nn, torchvision, matplotlib, scikit-learn.
 - **Tính năng nổi bật**:
-  - `DeepAutoencoder`: Tái hiện cấu trúc mạng sâu của bài báo ($784 \to 1000 \to 500 \to 250 \to 30/2 \to \dots$).
-  - Huấn luyện trên MNIST và so sánh trực quan với **PCA Baseline**.
-  - Xuất biểu đồ phân cụm không gian tiềm ẩn 2D (`latent_space_2d.png`) tái hiện Figure 3 của Hinton 2006.
-  - Tự động fallback an toàn sang dữ liệu nhân tạo nếu chạy offline không có kết nối internet.
+  - `ShallowAutoencoder`: Mạng nơ-ron nông 1 tầng ẩn ($784 \to 2 \to 784$).
+  - `DeepAutoencoder`: Tái hiện cấu trúc mạng sâu của bài báo ($784 \to 1000 \to 500 \to 250 \to 2 \to \dots$).
+  - `ConvAutoencoder`: Mô hình tích chập 2D hiện đại khai thác tính bất biến không gian với `Conv2d` và `ConvTranspose2d`.
+  - **Bộ nạp dữ liệu Fallback an toàn**: Tự động tải MNIST từ torchvision hoặc tự động sinh dữ liệu đa tạp nhân tạo nếu chạy offline.
+  - **Đối chuẩn giá trị học thuật định lượng qua 4 thế hệ**:
+    1. *Linear PCA (Pearson 1901)*: Chiếu tuyến tính cổ điển.
+    2. *Shallow Autoencoder (Rumelhart 1986)*: Nén nông.
+    3. *Deep Autoencoder (Hinton 2006)*: Nén phi tuyến sâu.
+    4. *Convolutional Autoencoder (Hiện Đại)*: Nén tối ưu theo không gian ảnh.
+  - **Tự động xuất đồ thị 4 bảng con chuyên sâu** vào `outputs/autoencoder_academic_comparison.png`:
+    1. *Reconstruction Comparison*: Đối chiếu ảnh gốc và ảnh tái tạo của 4 mô hình.
+    2. *Test MSE Bar Chart*: So sánh định lượng sai số tái tạo nén về 2 chiều.
+    3. *2D Latent Space Visualization*: Biểu diễn phân cụm không gian tiềm ẩn 2D với 10 nhãn chữ số (tái hiện Figure 3 của Hinton 2006).
+    4. *Loss Convergence Curves*: Đường cong hội tụ huấn luyện qua các Epochs.
 
 ---
 
