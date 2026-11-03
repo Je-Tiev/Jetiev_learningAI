@@ -204,7 +204,8 @@ def run_academic_value_comparison():
 - [`Day 07 - VAE - Auto-Encoding Variational Bayes`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2007%20-%20VAE%20-%20Auto-Encoding%20Variational%20Bayes): ✅ **Hoàn thành xuất sắc: Đủ 4 file code + Bình giải chi tiết cho người mới + Khối đối chuẩn giá trị học thuật**
 - [`Day 08 - GAN`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2008%20-%20GAN): ✅ **Hoàn thành xuất sắc: Đủ 4 file code + Bình giải chi tiết cho người mới + Khối đối chuẩn giá trị học thuật**
 - [`Day 09 - Dropout`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2009%20-%20Dropout): ✅ **Hoàn thành xuất sắc: Đủ 4 file code + Bình giải chi tiết cho người mới + Khối đối chuẩn giá trị học thuật**
-- `Day 10` đến `Day 20`: 📚 *Đã có PDF gốc trong `resources/`, sẵn sàng triển khai theo khung chuẩn hóa mục 6.*
+- [`Day 10 - Adam`](./20%20AI%20Research%20Paper%20quan%20trọng%20nhất%20của%20TK%2021/Day%2010%20-%20Adam): ✅ **Hoàn thành xuất sắc: Đủ 4 file code + Bình giải chi tiết cho người mới + Khối đối chuẩn giá trị học thuật**
+- `Day 11` đến `Day 20`: 📚 *Đã có PDF gốc trong `resources/`, sẵn sàng triển khai theo khung chuẩn hóa mục 6.*
 
 ### 10 Research Papers Về NLP (10 bài)
 - `Day 01` đến `Day 10`: 📚 *Đã có PDF gốc trong `resources/`, sẵn sàng triển khai theo khung chuẩn hóa mục 6.*
